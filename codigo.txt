@@ -1,0 +1,104 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(Myapp());
+}
+
+class Myapp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.grey,
+        body: Padding(
+          padding: EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage(
+                  'images/foto.jpg',
+                ),
+              ),
+
+              Text(
+                'Henrique Bendiuz Silva ',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                 // Icon(Icons.maps_home_work),
+                  Text(
+                    'Ricky',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                   ],
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.maps_home_work),
+                  Text(
+                    'ricky@gmail.com',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                   ],
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.maps_home_work),
+                  Text(
+                    'Brazil , São Paulo , SP',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                   ],
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.maps_home_work),
+                  Text(
+                    '1000 seguidores',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                   ],
+              ),
+                  
+                
+
+
+                  
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
